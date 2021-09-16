@@ -3,3 +3,6 @@
 /jayfu
 /jayfu.jar
 /target
+.lsp/.cache
+.clj-kondo/.cache
+.calva/output-window/output.calva-repl

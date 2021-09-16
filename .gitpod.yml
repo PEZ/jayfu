@@ -1,0 +1,21 @@
+image:
+  file: .gitpod.Dockerfile
+
+vscode:
+  extensions:
+    - betterthantomorrow.calva
+
+ports:
+  - port: 5900
+    onOpen: ignore
+  - port: 6080
+    onOpen: ignore
+    
+tasks:
+  - command: |
+      # Open instructions in VS Code
+      code README.md
+
+github:
+  prebuilds:
+    main: true
