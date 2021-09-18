@@ -10,12 +10,16 @@ ports:
     onOpen: ignore
   - port: 6080
     onOpen: ignore
-    
-tasks:
-  - command: |
-      # Open instructions in VS Code
-      code README.md
 
 github:
   prebuilds:
     main: true
+
+tasks:
+  - name: jayfu setup
+    init: |
+      # We want to install this from .gitpod.Dockerfile, but some bug prevents it
+      brew install borkdude/brew/babashka
+    command: |
+      # Open instructions in VS Code
+      code README.md
